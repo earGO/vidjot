@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb56826b-4c20-4f91-af5a-9b1e227abdbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/idea.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/idea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Idea.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Idea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ideas/ideas.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/ideas/ideas.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/_navbar.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/_navbar.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/login.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/login.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/register.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/register.handlebars" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/idea.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="450">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -272,12 +261,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549384665500</updated>
       <workItem from="1549384667370" duration="29955000" />
-      <workItem from="1549597323298" duration="4467000" />
+      <workItem from="1549597323298" duration="4962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34422000" />
+    <option name="totallyTimeSpent" value="34917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1544" height="1080" extended-state="0" />
@@ -509,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/idea.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="450">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
         </state>
       </provider>
     </entry>
