@@ -5,10 +5,12 @@ const express = require('express'),
     //controllers
     home=require('./controllers/home'),
     about=require('./controllers/about'),
-    idea = require('./controllers/idea'),
+    auth=require('./controllers/auth'),
+    //routes
+    ideas = require('./routes/ideas'),
+    users = require('./routes/users'),
 
     //models
-    Idea = require('./models/Idea'),
 
     //middleware
     bodyParser = require('body-parser'),
@@ -56,24 +58,12 @@ app.get('/',home.home);
 //ABOUT route
 app.get('/about',about.about);
 
-//Ideas index pages
-app.get('/ideas',idea.ideas);
+//ideas router
+app.use('/ideas',ideas)
 
-//Add Idea Form
-app.get('/ideas/add',idea.addIdea);
 
-//Edit Idea Form
-app.get('/ideas/edit/:id',idea.editIdea);
-
-//edit form process
-app.put('/ideas/:id',idea.updateIdea)
-
-//delete Idea
-app.delete('/ideas/:id',idea.deleteIdea)
-
-//create Idea
-app.post('/ideas',idea.postIdea)
-
+//Login & authentication router
+app.use('/users',users)
 
 //Start an application
 app.listen(port,()=>{
