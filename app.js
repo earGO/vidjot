@@ -1,7 +1,7 @@
 /*======================Declare all libraries and middleware and stuff ========================*/
 const express = require('express'),
     app = express(),
-    port = 5000,
+    port = process.env.PORT || 5000,
 
     //controllers
     home=require('./controllers/home'),
@@ -28,8 +28,10 @@ const express = require('express'),
 //Map global promises to get rid of warning
 mongoose.Promise = global.Promise;
 
+//DB config
+const db = require('./config/database');
 //connect to mongoose
-mongoose.connect('mongodb://localhost/vidjot-dev',{ useNewUrlParser:true})
+mongoose.connect(db.mongoURI,{ useNewUrlParser:true})
     .then(()=> console.log('MongoDB connected!'))
     .catch(err => console.log('error connecting to MongoDB\n',errs));
 

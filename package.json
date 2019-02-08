@@ -4,7 +4,8 @@
   "description": "a simple pet project for a MongoDB practice",
   "main": "app.js",
   "scripts": {
-    "test": "--jest watchall"
+    "test": "--jest watchall",
+    "start": "node app.js"
   },
   "keywords": [
     "MongoDB",
