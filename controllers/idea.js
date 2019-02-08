@@ -30,7 +30,7 @@ const Idea = mongoose.model('ideas'),
             new Idea(newIdea)
                 .save()
                 .then(idea => {
-                    console.log(idea)
+                    req.flash('success_msg','Video idea added successfully')
                     res.redirect('/ideas')
                 })
         }
@@ -53,7 +53,6 @@ const Idea = mongoose.model('ideas'),
     Idea.findOne({
         _id:req.params.id})
         .then(idea=>{
-            console.log(idea)
             res.render('ideas/edit',{
                 idea:idea
             })
@@ -68,9 +67,9 @@ const Idea = mongoose.model('ideas'),
                 idea.title = req.body.title;
                 idea.details = req.body.details;
                 idea.save()
-                console.log(idea)
             })
             .then(idea=>{
+                req.flash('success_msg','Video idea edited successfully')
                 res.redirect('/ideas')
             })
     },
@@ -79,6 +78,7 @@ const Idea = mongoose.model('ideas'),
             _id:req.params.id
         })
             .then(idea=>{
+                req.flash('success_msg','Video idea removed successfully')
                 res.redirect('/ideas')
             })
     }
