@@ -25,7 +25,8 @@ const Idea = mongoose.model('ideas'),
         } else {
             const newIdea = {
                 title: req.body.title,
-                details: req.body.details
+                details: req.body.details,
+                user: req.user.id
             }
             new Idea(newIdea)
                 .save()
@@ -37,7 +38,7 @@ const Idea = mongoose.model('ideas'),
     },
 
     ideas = function (req,res) {
-    Idea.find({})
+    Idea.find({user:req.user.id})
         .sort({date:'desc'})
         .then((ideas)=>{
                 res.render('ideas/ideas',{

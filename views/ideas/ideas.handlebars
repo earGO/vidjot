@@ -2,7 +2,7 @@
     <div class="thumbnail caption">
         <h4 class="">{{title}}</h4>
         <p class="">{{details}}</p>
-        <a href="/ideas/edit/{{id}}" class="btn btn-primary btn-lg btn-block mb-2">Edit</a>
+        <a href="/ideas/edit/{{id}}" class="btn btn-primary btn-lg btn-block mb-3">Edit</a>
         <form action="/ideas/{{id}}?_method=DELETE" method="post">
             <input type="hidden" name="_method" value="DELETE">
             <button class="btn btn-danger btn-lg btn-block" type="submit">Delete idea</button>
